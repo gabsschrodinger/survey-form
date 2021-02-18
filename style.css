@@ -1,0 +1,42 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: "Trebuchet MS", Helvetica, Arial;
+    background-color: RGBA(252,235,225,0.5);
+  }
+  
+  .container {
+    padding: 0 30vw 0 30vw;
+  }
+  
+  header {
+    background: #ffe;
+    text-align: center;
+    color: #250238;
+    background-color: #fcebe1;
+    border-radius: 25px;
+    padding: 0.5em;
+    margin: 1em;
+  }
+
+  form {
+    padding: 2em;
+    background-color: #fcebe1;
+    border-radius: 25px;
+  }
+  
+  .form-group {
+    margin: 0.5em auto 0.5em auto;
+    padding: 0.25rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .clue {
+    font-size: 0.7em;
+  }

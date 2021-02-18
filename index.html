@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Antonio Tanaka's Band Survey</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="container">
+
+            <header>
+              <h1 id="title" class="form-header">New Antonio Tanaka's Band Survey</h1>
+              <p id="description" class="form-header">Thank you for your feedback for our band debute!</p>
+            </header>
+            
+            <form id="survey-form">
+              
+              <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
+              </div>
+              
+              <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required>
+              </div>
+              
+              <div class="form-group">
+                <label id="number-label" for="number">Age</label>
+                <input type="number" name="age" id="number" min="14" max="130" class="form-control" placeholder="Age" required>
+              </div>
+              
+              <div class="form-group">
+                <p>Which band member did you like the most?</p>
+                <select id="dropdown" name="role" class="form-control" required>
+                  <option disabled selected value>Select the best band member</option>
+                  <option value="guitarrist">Guitar player</option>
+                  <option value="bassist">Bass player</option>
+                  <option value="vocalist">Singer</option>
+                  <option value="dj">DJ</option>
+                  <option value="drummer">Drummer</option>
+                </select>
+              </div>
+              
+              <div class="form-group">
+                <p>When did you watch the band?</p>
+                <label>
+                  <input name="audition-date" value="Saturday" type="radio" class="input-radio" checked>
+                  Saturday, January 23
+                </label>
+                <label>
+                  <input name="audition-date" value="Sunday" type="radio" class="input-radio">
+                  Sunday, January 24
+                </label>
+                <label>
+                  <input name="audition-date" value="Monday" type="radio" class="input-radio">
+                  Monday, January 25
+                </label>
+              </div>
+              
+              <div class="form-group">
+                <p>What music genres do you enjoy?
+                  <span class="clue">(Check all that apply)</span>
+                </p>
+                <label>
+                  <input name="music-genre" value="kpop" type="checkbox" class="input-checkbox">
+                  K-pop
+                </label>
+                <label>
+                  <input name="music-genre" value="lofi" type="checkbox" class="input-checkbox">
+                  Lo-fi Hip Hop
+                </label>
+                <label>
+                  <input name="music-genre" value="jrock" type="checkbox" class="input-checkbox">
+                  J-rock
+                </label>
+                <label>
+                  <input name="music-genre" value="classic" type="checkbox" class="input-checkbox">
+                  Classical music
+                </label>
+                <label>
+                  <input name="music-genre" value="rap" type="checkbox" class="input-checkbox">
+                  Rap
+                </label>
+                <label>
+                  <input name="music-genre" value="country" type="checkbox" class="input-checkbox">
+                  Country music
+                </label>
+                <label>
+                  <input name="music-genre" value="brazilian-funk" type="checkbox" class="input-checkbox">
+                  Brazilian funk
+                </label>
+                <label>
+                  <input name="music-genre" value="rab" type="checkbox" class="input-checkbox">
+                  R&B
+                </label>
+                <label>
+                  <input name="music-genre" value="heavy-metal" type="checkbox" class="input-checkbox">
+                  Heavy metal
+                </label>
+                <label>
+                  <input name="music-genre" value="reggaeton" type="checkbox" class="input-checkbox">
+                  Reggaeton
+                </label>
+              </div>
+              
+              <div class="form-group">
+                <p>Feel free to give us any suggestions!</p>
+                <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment"></textarea>
+              </div>
+              
+              <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">Submit</button>
+              </div>
+              
+            </form>
+              
+            </div>
+    </body>
+</html>
